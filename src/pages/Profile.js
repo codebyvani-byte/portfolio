@@ -19,6 +19,7 @@ export default function Profile() {
             <img
               src={profilePic}
               alt="Vani"
+              draggable={false}
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300"
             />
           </div>
