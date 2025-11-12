@@ -3,7 +3,7 @@ import { Mail, Smartphone, Globe, Server } from "lucide-react";
 
 export default function HireMe() {
   const handleEmailClick = () => {
-    window.location.href = "mailto:logicloom.devs@gmail.com";
+    window.location.href = "mailto:contact@vanisree.com";
   };
 
   const services = [
@@ -77,9 +77,7 @@ export default function HireMe() {
             className="w-full flex items-center gap-3 bg-[#2d2f31] text-gray-200 dark:bg-neutral-800 px-4 py-3 rounded-md border border-transparent hover:border-gray-500 transition-all cursor-pointer focus:outline-none"
           >
             <Mail className="w-5 h-5 text-gray-400" />
-            <span className="text-sm text-gray-200">
-              logicloom.devs@gmail.com
-            </span>
+            <span className="text-sm text-gray-200">contact@vanisree.com</span>
           </button>
         </div>
       </div>
