@@ -10,7 +10,7 @@ const SEO = ({
   type = "website",
   author = "Vanisree",
 }) => {
-  const siteUrl = "https://codebyvani.com";
+  const siteUrl = "https://vanisree.com";
   const defaultImage = `${siteUrl}/logo512.png`;
   const fullTitle = title
     ? `${title} | Vanisree Portfolio`

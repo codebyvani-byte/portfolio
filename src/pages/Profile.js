@@ -6,7 +6,6 @@ export default function Profile() {
   return (
     <>
       <SEO
-        title="Home"
         description="Hey, I'm Vani. An experienced Software Engineer passionate about building thoughtful, elegant, and user-focused experiences. Welcome to my digital portfolio."
         keywords="Vanisree, Software Engineer, Frontend Developer, React Developer, Portfolio, Web Development, Mobile App Development"
         url="/"

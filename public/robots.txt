@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://codebyvani.com/sitemap.xml
+Sitemap: https://vanisree.com/sitemap.xml
