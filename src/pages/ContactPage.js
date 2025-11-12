@@ -1,8 +1,16 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 export default function ContactPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <>
+      <SEO
+        title="Contact"
+        description="Let's talk about your project. Get in touch to discuss how I can help build your digital presence with custom websites, web applications, and mobile applications."
+        keywords="Contact Vanisree, Hire Software Engineer, Web Developer Contact, React Developer Contact, Project Inquiry"
+        url="/contact"
+      />
+      <div className="max-w-3xl mx-auto px-6 py-16">
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
           Let’s talk about your project
@@ -79,5 +87,6 @@ export default function ContactPage() {
         </p>
       </form>
     </div>
+    </>
   );
 }

@@ -1,8 +1,17 @@
+import React from "react";
+import SEO from "../components/SEO";
 import profilePic from "../assets/images/vani.jpg";
 
 export default function Profile() {
   return (
-    <div className="min-h-screen w-full transition-colors duration-300">
+    <>
+      <SEO
+        title="Home"
+        description="Hey, I'm Vani. An experienced Software Engineer passionate about building thoughtful, elegant, and user-focused experiences. Welcome to my digital portfolio."
+        keywords="Vanisree, Software Engineer, Frontend Developer, React Developer, Portfolio, Web Development, Mobile App Development"
+        url="/"
+      />
+      <div className="min-h-screen w-full transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-6 md:px-10 py-10">
         <section className="flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex-1">
@@ -83,5 +92,6 @@ export default function Profile() {
         <div className="border-b border-gray-300 dark:border-gray-700 mt-20" />
       </div>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 export default function About() {
   const skills = [
@@ -20,7 +21,14 @@ export default function About() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-6 md:px-10 py-20">
+    <>
+      <SEO
+        title="About Me"
+        description="I'm a Frontend Focused and Experienced Software Engineer building and managing the Front-end of Websites, Web Applications and Mobile Applications. Specializing in React, React Native, Next.js, JavaScript, TypeScript, and modern web technologies."
+        keywords="Vanisree About, Software Engineer, Frontend Developer, React Developer, React Native Developer, Skills, JavaScript, TypeScript, Next.js, Tailwind CSS"
+        url="/about"
+      />
+      <div className="max-w-4xl mx-auto px-6 md:px-10 py-20">
       <h2 className="text-2xl font-semibold font-serif cursor-pointer mb-8">
         About Me
       </h2>
@@ -58,5 +66,6 @@ export default function About() {
         </div>
       </div>
     </div>
+    </>
   );
 }

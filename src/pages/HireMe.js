@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 import { Mail, Smartphone, Globe, Server } from "lucide-react";
 
 export default function HireMe() {
@@ -25,7 +26,14 @@ export default function HireMe() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-6 md:px-10 py-20">
+    <>
+      <SEO
+        title="Hire Me"
+        description="Looking for a skilled software engineer? I specialize in Mobile App Development, Website Development, and Web Application Development. Let's collaborate to turn your vision into a powerful digital product!"
+        keywords="Hire Vanisree, Software Engineer for Hire, React Developer for Hire, Mobile App Developer, Web Developer Services, Freelance Developer"
+        url="/work-with-me"
+      />
+      <div className="max-w-3xl mx-auto px-6 md:px-10 py-20">
       <h2 className="text-2xl font-semibold font-serif cursor-pointer mb-8">
         Hire Me
       </h2>
@@ -82,5 +90,6 @@ export default function HireMe() {
         </div>
       </div>
     </div>
+    </>
   );
 }
