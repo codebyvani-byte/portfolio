@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
       <div className="p-4">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="flex px-6 md:px-10 justify-between items-center max-w-4xl mx-auto">
           {/* Logo */}
           <Link
             to="/"
@@ -43,8 +43,8 @@ export default function Header() {
             VP
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-x-6 lg:gap-x-12">
+          {/* Desktop Menu - CENTERED */}
+          <nav className="hidden md:flex items-center justify-center gap-x-6 lg:gap-x-12 flex-1">
             <Link
               to="/projects"
               className={`text-base font-serif cursor-pointer transition-all duration-300 ${getLinkStyle(
@@ -77,28 +77,32 @@ export default function Header() {
             >
               Contact
             </Link>
-
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-              aria-label="Toggle theme"
-            >
-              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
           </nav>
 
-          {/* Mobile Menu Button and Theme Toggle */}
-          <div className="flex items-center gap-2 md:hidden">
+          {/* Theme + Mobile Menu Toggle */}
+          <div className="flex items-center gap-2">
+            {/* Desktop Theme Button */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="hidden md:block p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               aria-label="Toggle theme"
             >
               {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
             </button>
+
+            {/* Mobile Theme Button */}
+            <button
+              onClick={toggleTheme}
+              className="md:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              aria-label="Toggle theme"
+            >
+              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            </button>
+
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="md:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -106,7 +110,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-800 pt-4">
             <div className="flex flex-col gap-4">
